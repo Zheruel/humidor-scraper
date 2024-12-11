@@ -14,6 +14,7 @@ async def scrape_products():
             "sort": 2,
             "page_number": 1,
             "f": 1,
+            "is_saleable": 1,
         }
         
         query_string = "&".join(f"{k}={v}" for k, v in params.items())
